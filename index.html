@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jornada de Ingeniero en Software 2026</title>
+</head>
+<body>
+  <header>
+    <p>Elias Rosell</p>
+    <img src="img/ues-logo.png" alt="Logo de la Universidad de El Salvador" width="120">
+    <h1>Jornada de Ingeniero en Software 2026</h1>
+    <p><time datetime="2026-04-27">Lunes 27 de abril de 2026</time></p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="programa.html">Programa</a></li>
+      <li><a href="index.html#registro">Registro</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section>
+      <h2>Acerca del evento</h2>
+      <img src="img/foto-propia.avif" alt="Foto del campus universitario sede del evento" width="300">
+      <p>
+        Te invitamos a participar en la Jornada de Ingeniero en Software 2026,
+        un espacio de conferencias, reconocimientos y cultura organizado por la
+        carrera de Ingenieria en Software de la UES.
+      </p>
+    </section>
+
+    <section>
+      <h2>Agenda rapida</h2>
+      <ol>
+        <li>11:00 – 12:00 — Conferencia 1</li>
+        <li>12:00 – 13:00 — Conferencia 2</li>
+        <li>13:00 – 13:30 — Entrega de reconocimientos</li>
+        <li>13:30 – 14:30 — Conferencia 3</li>
+        <li>14:30 – 16:30 — Evento cultural: Grupo musical norteno (por confirmar)</li>
+      </ol>
+    </section>
+
+    <section id="registro">
+      <h2>Registro</h2>
+
+      <form action="#" method="post">
+
+        <div>
+          <label for="nombre">Nombre completo</label><br>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div>
+          <label for="correo">Correo institucional UES</label><br>
+          <input type="email" id="correo" name="correo" required
+                 pattern="([0-9]{8}|[0-9]{11})@ues\.mx"
+                 placeholder="12345678@ues.mx"
+                 title="Ingresa tu correo UES (8 o 11 digitos seguidos de @ues.mx)">
+        </div>
+
+        <div>
+          <label for="tipo-asistencia">Tipo de asistencia</label><br>
+          <select id="tipo-asistencia" name="tipo-asistencia" required>
+            <option value="">-- Selecciona --</option>
+            <option value="alumno-isw">Alumno (Ing. en Software)</option>
+            <option value="docente-isw">Docente (Ing. en Software)</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend>Evento principal de tu interes</legend>
+
+          <div>
+            <input type="radio" id="evt-conf1" name="evento-principal" value="conferencia-1" required>
+            <label for="evt-conf1">Conferencia 1</label>
+          </div>
+          <div>
+            <input type="radio" id="evt-conf2" name="evento-principal" value="conferencia-2">
+            <label for="evt-conf2">Conferencia 2</label>
+          </div>
+          <div>
+            <input type="radio" id="evt-reconocimientos" name="evento-principal" value="reconocimientos">
+            <label for="evt-reconocimientos">Entrega de reconocimientos</label>
+          </div>
+          <div>
+            <input type="radio" id="evt-conf3" name="evento-principal" value="conferencia-3">
+            <label for="evt-conf3">Conferencia 3</label>
+          </div>
+          <div>
+            <input type="radio" id="evt-cultural" name="evento-principal" value="evento-cultural">
+            <label for="evt-cultural">Evento cultural: Grupo musical norteno</label>
+          </div>
+        </fieldset>
+
+        <div>
+          <label for="comentarios">Comentarios (opcional)</label><br>
+          <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Enviar registro</button>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Jornada de Ingeniero en Software 2026 — Universidad de El Salvador</p>
+  </footer>
+
+</body>
+</html>
